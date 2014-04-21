@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:ng="http://angularjs.org" ng-app="camelize">
+
+  <head>
+    <title>camelize-http example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body ng-controller="BodyController">
+    <h1>camelize-http example</h1>
+    <h3>Original response / Using $http: {{ data.$http }}</h3>
+    <h3>Converted / Using camelize-http: {{ data.cHttp }}</h3>
+
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

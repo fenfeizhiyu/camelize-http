@@ -1,0 +1,4 @@
+{
+  "from_server": 42,
+  "array": [{ "nested_child": 1 }]
+}
