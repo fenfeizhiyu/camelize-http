@@ -26,7 +26,7 @@
       }
 
       args[1] = parse(arguments[1], underscore);
-      return wrap($http.post.apply(this, arguments));
+      return wrap($http.post.apply(this, args));
     }
 
     function wrap(req) {
