@@ -1,11 +1,9 @@
 camelize-http
 -------------
 
-This tiny AngularJS module acts as a wrapper around the angular core $http service, with the single responsibility of eliminating the discrepancy between underscored_keys from backends (e.g. Python, Ruby) and camelizedKeys in the front-end.
+This tiny AngularJS module acts as a wrapper around the core $http service, with the single responsibility of eliminating the discrepancy between <b>underscored_keys</b> from/to backends (e.g. Python, Ruby) and <b>camelizedKeys</b> in the front-end.
 
 ## Installation using Bower
-
-Note: this is a work in progress. Installing it right now will get you an empty module.
 
     $ bower install camelize-http
 
@@ -29,7 +27,7 @@ angular.module('YourApp', ['camelizeHttp']);
 
 #### Step 3
 
-Inject the cHttp wrapper into an angular component
+Inject cHttp wrapper into an angular component
 
 ```javascript
 angular.module('YourApp').service('SomeComponent', function(cHttp) {
