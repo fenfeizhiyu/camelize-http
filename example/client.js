@@ -1,12 +1,12 @@
-angular.module('camelize', []).controller('BodyController', function($scope, $http) {
+angular.module('MyApp', ['camelizeHttp']).controller('BodyController', function($scope, $http, cHttp) {
   $scope.data = {};
 
   $http.get('/data.json').success(function(response) {
     $scope.data.$http = response;
   });
 
-  $scope.data.cHttp = {
-    fromServer: 42,
-    array: [{ nestedChild: 1 }]
-  };
+  cHttp.get('/data.json').success(function(response) {
+    $scope.data.cHttp = response;
+  });
+
 });
