@@ -1,0 +1,4 @@
+/**/ angular.callbacks._1({
+  "from_server": 42,
+  "array": [{ "nested_child": 1 }]
+})

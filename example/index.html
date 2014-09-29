@@ -9,9 +9,18 @@
   </head>
 
   <body ng-controller="BodyController">
-    <h1>camelize-http example</h1>
-    <h3>Original response / Using $http: {{ data.$http }}</h3>
-    <h3>Converted / Using camelize-http: {{ data.cHttp }}</h3>
+
+    <h1>camelize-http</h1>
+
+    <p>
+      <div>Response using $http.get: {{ data.$httpGet }}</div>
+      <div>Response using cHttp.get: {{ data.cHttpGet }}</div>
+    </p>
+
+    <p>
+      <div>Response using $http.jsonp: {{ data.$httpJsonp }}</div>
+      <div>Response using cHttp.jsonp: {{ data.cHttpJsonp }}</div>
+    </p>
 
     <script src="/lib/angular/angular.js"></script>
     <script src="/dist/camelize-http.js"></script>
