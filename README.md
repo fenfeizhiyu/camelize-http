@@ -1,7 +1,7 @@
 camelize-http
 -------------
 
-This tiny AngularJS module acts as a wrapper around the core $http service, with the single responsibility of eliminating the discrepancy between <b>underscored_keys</b> from/to backends (e.g. Python, Ruby) and <b>camelizedKeys</b> in the front-end.
+This tiny AngularJS module wraps around the core $http service, with the single responsibility of eliminating discrepancies between <b>underscored_keys</b> from/to backends (e.g. Python, Ruby) and <b>camelizedKeys</b> in the front-end.
 
 ## Installation using Bower
 
@@ -59,3 +59,18 @@ cHttp.post('/some-endpoint', data).success(function(response) {
     // And the response is still converted to camel case
 });
 ```
+
+## Contribute / Roadmap
+
+Implement remaining shortcut methods
+
+- HEAD
+- PUT
+- DELETE
+- JSONP
+
+Support all arguments in success/error promises
+
+## License
+
+MIT
